@@ -1,0 +1,9 @@
+{
+  "name": "youtube-api",
+  "description": "YouTube API v3 for Meteor",
+  "homepage": "https://github.com/daltonrenaldo/youtube-api",
+  "author": "Renaldo Pierre-Louis <pirelouisd87@gmail.com>",
+  "version": "0.0.1",
+  "git": "https://github.com/daltonrenaldo/youtube-api.git",
+  "packages": {}
+}
