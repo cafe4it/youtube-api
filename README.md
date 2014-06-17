@@ -105,12 +105,12 @@ Additionally, the [official Youtube documentation](https://developers.google.com
 
 ```JS
 
-Youtube.authenticate({
+YoutubeApi.authenticate({
     type: "oauth",
     token: ACCESS_TOKEN
 });
 
-Youtube.channels.list({
+YoutubeApi.channels.list({
     "part": "id",
     "mySubscribers": true,
     "maxResults": 50
@@ -122,7 +122,7 @@ Youtube.channels.list({
 ## Authentication
 
 ```JS
-Youtube.authenticate({
+YoutubeApi.authenticate({
     type: "oauth",
     token: "your access token"
 });
@@ -162,7 +162,7 @@ MIT license. See the LICENSE file for details.
     Example:
 
     ```js
-    Youtube.authenticate({
+    YoutubeApi.authenticate({
         type: 'key',
         key: 'AIz...OtE'
     });
