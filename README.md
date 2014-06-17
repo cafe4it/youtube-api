@@ -101,10 +101,9 @@ Additionally, the [official Youtube documentation](https://developers.google.com
   </tr>
 </tbody></table>
 
-## Example
+## Example (server-side)
 
 ```JS
-var Youtube = require("youtube-api");
 
 Youtube.authenticate({
     type: "oauth",
