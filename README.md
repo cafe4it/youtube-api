@@ -103,8 +103,7 @@ Additionally, the [official Youtube documentation](https://developers.google.com
 
 ## Example (server-side)
 
-```JS
-
+```js
 YoutubeApi.authenticate({
     type: "oauth",
     token: ACCESS_TOKEN
@@ -119,12 +118,39 @@ YoutubeApi.channels.list({
 });
 ```
 
+### Search for videos
+
+```js
+YoutubeApi.authenticate({
+    type: 'key',
+    key: 'YOUR_KEY'
+});
+
+Meteor.methods({
+    searchVideo: function(search) {
+        YoutubeApi.search.list({
+            part: "id",
+            type: "video",
+            maxResults: 5,
+            q: search,
+        }, function (err, data) {
+            console.log(err, data);
+        });
+    }
+});
+```
+
 ## Authentication
 
-```JS
+```js
 YoutubeApi.authenticate({
     type: "oauth",
     token: "your access token"
+});
+
+YoutubeApi.authenticate({
+    type: 'key',
+    key: 'YOUR_KEY'
 });
 ```
 
